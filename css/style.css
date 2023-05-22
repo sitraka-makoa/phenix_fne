@@ -1,0 +1,32 @@
+.webform-submission-formulaire-pour-adherent-form #edit-civicrm-1-contact-1-fieldset-fieldset > legend {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+.webform-submission-formulaire-pour-adherent-form #edit-pave-coordonnees > legend ,
+.webform-submission-formulaire-pour-adherent-form #edit-pave-activite- > legend {
+    font-size: 1.3rem;
+    padding-top: 24px;
+}
+
+.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-textfield ,
+.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-select,
+.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-email{
+    width: 33%;
+    display: inline-block;
+    /* display: flex; */
+    margin-right: 0 !important;
+    padding-right: 0;
+    padding-right: 10px;
+    /* float: left; */
+}
+
+.js-text-format-wrapper .js-filter-wrapper {
+    display: none;
+}
+
+.js-form-item.form-item.js-form-type-checkbox {
+    width: 33%;
+    display: inline-block;
+}

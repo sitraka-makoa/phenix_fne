@@ -1,0 +1,7 @@
+civicrm_webform_phenix:
+  version: 1.0
+  css:
+    component:
+      css/style.css: {}
+  js:
+    js/script.js: {}    

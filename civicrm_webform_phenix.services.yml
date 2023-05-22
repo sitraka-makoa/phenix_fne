@@ -1,0 +1,4 @@
+services:
+  civicrm_webform_phenix.webform:
+    class: Drupal\civicrm_webform_phenix\WebformService
+    arguments: ['@current_user']
