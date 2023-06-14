@@ -1,5 +1,5 @@
-name: 'civicrm webform phenix'
+name: 'fne phenix'
 type: module
-description: 'for webform '
+description: 'for fne '
 core_version_requirement: '^8 || ^9'
 package: 'Custom'

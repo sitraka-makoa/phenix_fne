@@ -1,5 +1,5 @@
-civicrm_webform_phenix:
-  version: 1.0
+phenix_fne:
+  version: 2.0
   css:
     component:
       css/style.css: {}

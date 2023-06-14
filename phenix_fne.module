@@ -1,0 +1,9 @@
+<?php 
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function phenix_fne_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attached']['library'][] = 'phenix_fne/phenix_fne';
+}

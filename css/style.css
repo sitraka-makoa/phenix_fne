@@ -1,32 +1,124 @@
-.webform-submission-formulaire-pour-adherent-form #edit-civicrm-1-contact-1-fieldset-fieldset > legend {
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.4rem;
+.path-frontpage #auth_box #middle_part > h2.title {
+	display: flex;
+	justify-content: center;
 }
 
-.webform-submission-formulaire-pour-adherent-form #edit-pave-coordonnees > legend ,
-.webform-submission-formulaire-pour-adherent-form #edit-pave-activite- > legend {
-    font-size: 1.3rem;
-    padding-top: 24px;
+.path-frontpage #bottom_part  {
+	margin-top: -110px;
+	
 }
 
-.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-textfield ,
-.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-select,
-.webform-submission-formulaire-pour-adherent-form .js-form-item.form-item.js-form-type-email{
-    width: 33%;
-    display: inline-block;
-    /* display: flex; */
-    margin-right: 0 !important;
-    padding-right: 0;
-    padding-right: 10px;
-    /* float: left; */
+.path-frontpage #bottom_part .password_link , .path-frontpage #bottom_part  .back_link {
+	  display: flex;
+    justify-content: center;
 }
 
-.js-text-format-wrapper .js-filter-wrapper {
-    display: none;
+.path-frontpage .region.region--highlighted.grid-full.layout--pass--content-medium {
+	  display: flex;
+    flex-direction: column;
 }
 
-.js-form-item.form-item.js-form-type-checkbox {
-    width: 33%;
-    display: inline-block;
+.path-frontpage .region.region--content.grid-full.layout--pass--content-medium.ie11-autorow {
+	/*margin-left: -16%;*/
+	display: flex;
+}
+
+.path-frontpage nav.tabs-wrapper > ul.tabs.tabs--primary {
+	  /*display: flex;*/
+    justify-content: center;
+    /*margin-left: -56px;*/
+}
+
+.path-frontpage #block-olivero-primary-local-tasks {
+	margin-bottom: 0;
+}
+.path-frontpage #block-olivero-content {
+	    margin-top: 25px;
+}
+
+.path-frontpage #auth_box {
+    width: 25%;
+	}
+#auth_box.password {
+    width: 25%;
+}
+
+#auth_box.password .region.region--highlighted {
+	display: flex;
+} 
+#auth_box.password .region.region--highlighted .tabs.tabs--primary {
+	width: max-content;
+}
+#auth_box.password #block-olivero-content {
+	display: flex;
+  grid-column: unset;
+}
+#auth_box.password form.user-pass {
+	width: 85%;
+}
+#auth_box.password #bottom_part {
+	    margin-top: -110px;
+}
+#auth_box.password #bottom_part .login_link {
+	display: flex;
+  justify-content: center;
+}
+#auth_box.password #bottom_part .back_link {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+	#auth_box.password {
+    width: 97%;
+}
+  /* For mobile phones: */
+  .path-frontpage #auth_box {
+    width: 100%;
+	}
+	
+	.path-frontpage .region.region--content.grid-full.layout--pass--content-medium.ie11-autorow{
+    margin-left: 0;
+	}
+	.path-frontpage #middle_part {
+		    min-height: 550px;
+	}
+	.path-frontpage #middle_part {
+		min-height: 600px;
+	}
+}
+  
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+	.path-frontpage #auth_box {
+    width: 100%;
+	}
+	.path-frontpage #block-olivero-content .block__content {
+		display: flex;
+	}
+	.path-frontpage #block-olivero-content .block__content .user-login-form {
+		margin: auto;
+	}
+	.path-frontpage #the_logo img {
+		max-width: 40%;
+    margin: auto;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#auth_box.password {
+    width: 72%;
+  }
+  /* For mobile phones: */
+  .path-frontpage #auth_box {
+    width: 100%;
+	}
+/*	.path-frontpage #auth_box */
+	
+	.path-frontpage .region.region--content.grid-full.layout--pass--content-medium.ie11-autorow{
+    margin-left: 0;
+	}
+	.path-frontpage #the_logo img {
+		max-width: 40%;
+    margin: auto;
+	}
 }
