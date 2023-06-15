@@ -1,0 +1,32 @@
+<?php 
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function phenix_cfonb_group_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attached']['library'][] = 'phenix_cfonb_group/phenix_cfonb_group';
+}
+
+
+
+function phenix_cfonb_group_preprocess_views_view_field(&$variables) {
+
+}
+
+
+
+/**
+ * Ce code sert à afficher 
+ * Implements hook_entity_view_alter().
+ */
+function phenix_cfonb_group_entity_view_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+  // Check if the entity is a node and the display is "default".
+  if ($entity->getEntityTypeId() === 'civicrm_group'  && $display->getMode() === 'default' ) {
+    $title_frontend = $entity->get('frontend_title')->getValue();
+    $title_frontend = $title_frontend ? $title_frontend[0]['value'] : '';
+    $second_keys = array_keys($build['_layout_builder'][0]['content'])[1];
+     
+    $build['_layout_builder'][0]['content'][$second_keys]['content'][0]['#context']['value'] = $title_frontend;
+  }
+}
