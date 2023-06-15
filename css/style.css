@@ -67,6 +67,9 @@
     display: flex;
     justify-content: center;
 }
+#auth_box #bottom_part .back_link {
+	display: none !important;
+}
 @media only screen and (max-width: 768px) {
 	#auth_box.password {
     width: 97%;
