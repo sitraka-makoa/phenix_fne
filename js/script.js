@@ -6,5 +6,3 @@
       }
     }
 })(jQuery, Drupal, drupalSettings);    
-
-console.log('test phenix fne')
