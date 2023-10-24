@@ -8,6 +8,14 @@
 	
 }
 
+/****/
+#header .site-branding {
+	background-image: none;
+}
+#header .site-branding__name a {
+	color:#313637
+}
+
 .path-frontpage #bottom_part .password_link , .path-frontpage #bottom_part  .back_link {
 	  display: flex;
     justify-content: center;

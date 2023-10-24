@@ -5,5 +5,14 @@
  * Implements hook_form_alter().
  */
 function phenix_fne_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $form['#attached']['library'][] = 'phenix_fne/phenix_fne';
+  // $form['#attached']['library'][] = 'phenix_fne/phenix_fne';
+}
+
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function phenix_fne_preprocess_page(&$variables)
+{
+  $variables['#attached']['library'][] = 'phenix_fne/phenix_fne';
 }
