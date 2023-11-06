@@ -15,6 +15,16 @@
 #header .site-branding__name a {
 	color:#313637
 }
+#header .site-header__initial {
+	background: none;
+}
+
+body.path-frontpage {
+	background-image: none !important;
+}
+body{
+	background-image:none !important;
+}
 
 .path-frontpage #bottom_part .password_link , .path-frontpage #bottom_part  .back_link {
 	  display: flex;
@@ -78,6 +88,19 @@
 #auth_box #bottom_part .back_link {
 	display: none !important;
 }
+
+#page-wrapper.page-wrapper {
+    max-width: 100%;
+    background: #fff;
+}
+@media (min-width: 75rem) {
+	body:not(.is-always-mobile-nav) .site-header__fixable.is-fixed {
+		position: fixed;
+		z-index: 102;
+		top: -4.5rem;
+		max-width: 100%;
+	}
+}
 @media only screen and (max-width: 768px) {
 	#auth_box.password {
     width: 97%;
@@ -95,6 +118,9 @@
 	}
 	.path-frontpage #middle_part {
 		min-height: 600px;
+	}
+	body {
+		background-color: cyan;
 	}
 }
   
@@ -116,6 +142,9 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	body {
+		background-color: rgb(137, 197, 40);
+	}
 	#auth_box.password {
     width: 72%;
   }
